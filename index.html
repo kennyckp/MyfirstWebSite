@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Website
+        </title>
+        <style>
+            h1{
+                color:blue;
+                text-align: center;
+            }
+            #para1{
+                text-align: right;
+            }
+            .nav{
+                color: #FF00FF;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>document.getElementById("demo").textContent = new Date()</script>
+        <script>
+            var answer = window.confirm('Need help?');
+            console.log(answer);
+            if(answer){
+                console.log('Yea, this user need help.');
+            }
+            else{
+                console.log('No, this user is tough.');
+            }
+        </script>
+        <script>
+            var answer = window.prompt('Guess my name? (Tom/June)')
+            
+            if(answer === 'Tom'){
+                window.alert('Yes, my name is Tom.');
+            }
+            else if(answer === 'June'){
+                window.alert('Yes, my name is June.');
+            }
+            else if(answer === 'q'){
+                console.log('quit');
+            }
+            else{
+                window.alert('Please read the question carefully.');
+            }
+        </script>
+        <script>
+            var answer = window.prompt('Need help again? (yes/no)')
+            
+            while(answer != 'yes' && answer != 'no'){
+                if(answer === 'q'){
+                    console.log('quit');
+                    break;
+                }
+                window.alert('Please read the question carefully.');
+                answer = window.prompt('Need help again? (yes/no)')
+            }
+
+            if(answer === 'yes'){
+                window.alert('Sure, I will help you');
+            }
+            else if(answer === 'no'){
+                window.alert('Noted.');
+            }
+        </script>
+        <p style="color:red;font-size:10px">I am big red</p>
+        <h1>This is H1</h1>
+        <h2 id="para1">This is H2</h2>
+        <h3 class="nav">This is H3</h3>
+        <h4>This is H4</h4>
+        <h5>This is H5</h5>
+        <h6>This is H6</h6>
+
+        <a href="https://feifei.tw">This is Fei Fei website</a>
+        
+        <img src="Cat03.jpg" width="400">
+        
+        <table>
+            <tr>
+                <th>First col</th>
+                <th>Second col</th>
+                <th>Third col</th>
+            </tr>
+            <tr>
+                <th>First row</th>
+                <th>(1,1)</th>
+                <th>(1,2)</th>
+            </tr>
+        </table>
+
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </body>
+</html>
